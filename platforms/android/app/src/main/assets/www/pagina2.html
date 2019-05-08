@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'unsafe-inline';
+     media-src *; img-src *; script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; connect-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>VOEG TOE</title>
+
+        <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+    </head>
+    <body style="background-color:#FEFDFC">
+
+
+     <div class="row justify-content-between hoofd">
+    <div class="col-9">
+      <h1>VOEG TOE</h1></a>
+    </div>
+    <div class="col-3">
+      <a href="index.html"><button class="btn btn-light">Terug</button></a>
+
+    </div>
+  </div>
+
+
+<!--Start formulier -->
+<form onsubmit="return false" class="ml-3 mr-3">
+
+  <div class="form-group text-white">
+    <label for="exampleFormControlTextarea1" class="font-weight-bold">Naam voedingsproduct</label>
+    <textarea class="form-control font-weight-light text-lowercase" name="Productnaam" placeholder="productnaam" id="productnaam" rows="1"></textarea>
+  </div>
+
+<div class="form-group text-white">
+<label for="form-check-input" class="font-weight-bold">Striktheid houdbaarheid</label> <br/>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="striktheid" id="striktheid" value="Ten minste houdbaar tot" checked>
+  <label class="form-check-label  text-white font-weight-light text-lowercase" for="striktheid1">
+    Ten minste houdbaar tot
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="striktheid" id="striktheid" value="Uiterst houdbaar tot">
+  <label class="form-check-label  text-white font-weight-light text-lowercase" for="Striktheid2">
+    Uiterst houdbaar tot
+  </label>
+</div>
+ </div>
+
+
+<div class="form-group text-white">
+  <label for="exampleFormControlTextarea1" class="font-weight-bold">Datum</label>
+  <div>
+    <input class="form-control font-weight-light text-lowercase" type="date" placeholder="dag-maand-jaar" id="datum">
+  </div>
+</div>
+
+
+<div class="form-group text-white">
+    <label for="exampleFormControlSelect1" class="font-weight-bold">Voedingscategorie</label>
+    <select class="form-control font-weight-light text-lowercase" name="categorie" id="categorie">
+      <option value="voedingscategorie">   </option>
+                        <option value="olie en vetten">oliën en vetten</option>
+                        <option value="peulvruchten">peulvruchten</option>
+                        <option value="groenten">groenten</option>
+                        <option value="noten en zaden">noten en zaden</option>
+                        <option value="graan en brood">brood</option>
+                        <option value="aardappelen">volkoren graanproducten en aardappelen</option>
+                        <option value="fruit">fruit</option>
+                        <option value="vis">vis</option>
+                        <option value="vlees">vlees</option>
+                        <option value="kaas">kaas</option>
+                        <option value="eieren">eieren</option>
+                        <option value="melk en alternatieven">melk en alternatieven</option>
+                        <option value="frisdrank">frisdrank</option>
+                        <option value="diepvriesproducten">diepvriesproducten</option>
+                        <option value="snacks">snacks</option>
+    </select>
+  </div>
+  <div class="form-group text-white">
+
+    <label for="exampleFormControlTextarea1" class="font-weight-bold">Opmerkingen</label>
+    <textarea class="form-control font-weight-light text-lowercase" nname="opmerkingen" placeholder="bv. in een slaatje doen..." id="opmerkingen"rows="1"></textarea>
+    
+  </div>
+</form>
+
+                    <button type="submit" onclick="uploadData()" class="btn btn-light float-right mr-3 knop" href="index.html">Invullen</button>
+
+          
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
